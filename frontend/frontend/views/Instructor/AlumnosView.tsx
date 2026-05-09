@@ -2,7 +2,7 @@ import React from 'react'
 
 function AlumnosView() {
   return (
-    <div>AlumnosView</div>
+    <div>Vista Alumnos - Josue David</div>
   )
 }
 

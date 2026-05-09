@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import { Label } from "../ui/label";
 import { BookText, ChartArea, User2 } from "lucide-react";
+import Link from "next/link";
 export function AppSideBar() {
   return (
     <Sidebar>
@@ -28,24 +29,35 @@ export function AppSideBar() {
       <SidebarContent>
         <SidebarMenu>
           <SidebarMenuItem>
-            <a href="/instructor/dashboard">
-              <SidebarMenuButton><ChartArea/> Dashboard</SidebarMenuButton>
-            </a>
+            <Link href="/instructor/dashboard">
+              <SidebarMenuButton>
+                <ChartArea /> Dashboard
+              </SidebarMenuButton>
+            </Link>
           </SidebarMenuItem>
+
           <SidebarMenuItem>
-            <a href="/instructor/alumnos">
-              <SidebarMenuButton><User2/>Alumnos</SidebarMenuButton>
-            </a>
+            <Link href="/instructor/alumnos">
+              <SidebarMenuButton>
+                <User2 /> Alumnos
+              </SidebarMenuButton>
+            </Link>
           </SidebarMenuItem>
+
           <SidebarMenuItem>
-            <a href="/instructor/tareas-seminario">
-              <SidebarMenuButton><BookText/>Tareas para Seminario</SidebarMenuButton>
-            </a>
+            <Link href="/instructor/tareas-seminario">
+              <SidebarMenuButton>
+                <BookText /> Tareas para Seminario
+              </SidebarMenuButton>
+            </Link>
           </SidebarMenuItem>
+
           <SidebarMenuItem>
-            <a href="/instructor/perfil">
-              <SidebarMenuButton><User2/>Perfil</SidebarMenuButton>
-            </a>
+            <Link href="/instructor/perfil">
+              <SidebarMenuButton>
+                <User2 /> Perfil
+              </SidebarMenuButton>
+            </Link>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarContent>
